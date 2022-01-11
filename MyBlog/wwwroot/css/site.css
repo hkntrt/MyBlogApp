@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+.carousel {
+    width: 80%;
+}
+
+.textovercontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.textovercontainer p{
+    font-size: 3rem;
+}
+
+.textovercontainer h2 {
+    font-size: 3.5rem;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }

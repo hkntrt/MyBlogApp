@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="col text-center" >
+    <h1 class="pb-3" > Welcome to MyBlog </h1>
+    <p class="pb-3"> Click blog posts to read posted articles or create a new one!' </p>
+    <a  class="btn btn-primary"  asp-controller="BlogPosts" asp-action="Create" > <i class="bi bi-plus-circle"></i> &nbsp New Blog Post</a>
+
+    <div class="container justify-content-center" >
+        <div class="col  mt-5" >
+            <div class="textovercontainer" >
+                <img src="~/images/text.jpg" class="img-fluid" />
+                <div class="centered" >
+                    <h2>Write anything you like!</h2>
+                    <p>Share with the world instantly</p>
+                </div>
+            </div>
+        </div>
+
+                <div class="col  mt-5" >
+            <div class="textovercontainer" >
+                <img src="~/images/lake.jpg" class="img-fluid" />
+                <div class="centered" >
+                    <h2>Bring your inner voice out!</h2>
+                    <p> Let the world hear you</p>
+                </div>
+            </div>
+        </div>
+
+                <div class="col  mt-5" >
+            <div class="textovercontainer" >
+                <img src="~/images/audience.jpg" class="img-fluid" />
+                <div class="centered" >
+                    <h2>Find your audience</h2>
+                    <p> Let your audience grow as you write. </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

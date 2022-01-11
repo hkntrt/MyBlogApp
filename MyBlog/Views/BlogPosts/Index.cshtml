@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MyBlog.Models.BlogPost>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    @foreach (var blogpost in Model)
+    {
+        <div class="row justify-content-center" >
+    <div class="col-12 justify-content-center mb-5 pb-2" style="border:2px;background-color:wheat;border-radius:1rem" >
+        <div class="text-center">
+        <h3> <a asp-controller="BlogPosts" asp-action="Read" asp-route-id="@blogpost.Id" class="link-secondary" > @blogpost.Title </a></h3>
+        <img class="img-fluid" src="@blogpost.Image" />
+        <p class="article" >@blogpost.Article.Substring(0,500)</p>
+        </div>     
+                <div class="row justify-content-end " >
+            <a asp-controller="BlogPosts" asp-action="Edit" asp-route-id="@blogpost.Id" class="btn btn-warning" style="width:75px" >Edit</a>
+            <a  asp-controller="BlogPosts" asp-action="Delete" asp-route-id="@blogpost.Id" class="btn btn-danger" style="width:85px;margin-left:1rem; margin-right:1rem"> Delete</a>
+        </div>
+
+        <div class="col" > 
+            <span> @blogpost.CreationDate </span>    
+        </div>
+
+    </div>
+
+    <div> 
+        
+        
+
+    </div>
+
+    </div>
+
+        
+    }
+
+</div>
